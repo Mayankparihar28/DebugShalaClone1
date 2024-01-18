@@ -1,0 +1,25 @@
+@keyframes scrollRight {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes scrollLeft {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scrolling-images {
+  animation: scrollRight 10s infinite linear;
+}
+
+.animate-scrolling-images-reverse {
+  animation: scrollLeft 10s infinite linear;
+}
