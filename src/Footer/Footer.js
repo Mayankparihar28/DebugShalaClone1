@@ -97,7 +97,7 @@ function Footer() {
               </h1>
               <hr className="border-[#c1bebe] border-spacing-2" />
               <ul className="flex text-[#c4c7cf] p-1.5 pl-0 font-normal gap-x-4">
-                <li>About Debugshala |</li>
+                <li><Link to="/aboutus">About Debugshala |</Link></li>
                 <li>
                   <a> An Instructor | </a>
                 </li>
@@ -105,14 +105,14 @@ function Footer() {
                   <a> Hire From Us |</a>
                 </li>
                 <li>Find a Job in Data Science |</li>
-                <li>
-                  <a> Privacy Policy | </a>
+                <li><Link to="/privacy-policy">Privacy Policy |</Link>
+                 
+                </li>
+                <li><Link to="/terms-conditions">Terms & Conditions |</Link>
+                 
                 </li>
                 <li>
-                  <a> Terms & Conditions |</a>
-                </li>
-                <li>
-                  <a> Refund Policy |</a>
+                <Link to="/refund-policy">Refund Policy |</Link>
                 </li>
               </ul>
             </div>
