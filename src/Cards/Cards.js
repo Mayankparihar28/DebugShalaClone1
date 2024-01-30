@@ -11,7 +11,7 @@ function Cards() {
   return (
     <>
       <div
-        className=" flex items-center justify-around bg-[#030a21] h-72"
+        className=" flex items-center justify-around bg-[#030a21] h-72 overflow-hidden"
         style={{
           backgroundImage: "url('assets/images/asset 64.svg')",
         }}
@@ -75,7 +75,7 @@ function Cards() {
           </div>
         </div>
       </div>
-      <div className="bg-gradient-to-r from-[#030a21] to-[#165e67] h-screen flex  items-center justify-center ">
+      <div className="bg-gradient-to-r from-[#030a21] to-[#165e67] h-screen flex  items-center justify-center overflow-hidden">
         <div className="flex items-center justify-around w-4/5">
           {/*first div  */}
           <div

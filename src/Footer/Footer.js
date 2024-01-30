@@ -4,7 +4,7 @@ function Footer() {
   return (
     <>
       {/*wrapper */}
-      <div className="bg-[#030a21] flex justify-center ">
+      <div className="bg-[#030a21] flex justify-center overflow-hidden">
         <div className=" w-[95%] my-10 h-auto">
           <div className=" flex">
             <div className="w-[73%]">

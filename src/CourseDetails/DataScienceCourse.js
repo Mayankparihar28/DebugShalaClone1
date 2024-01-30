@@ -1,22 +1,24 @@
 import { logoSvg, CrossSvg, svg1, svg2 } from "./logoSvg";
-
-
+import $ from "jquery";
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function DataScienceCourse() {
-
-  
-  
+  useEffect(() => {
+    $("#first").click(function () {
+      $("#second").toggle();
+    });
+  });
   return (
     <>
-    
       <div className="h-auto  flex flex-col justify-center items-center  bg-black">
         <div className="w-[65%] ">
           <div className="flex justify-center items-center p-6">
             <div className="bg-blue-500 w-[75%] h-16 rounded-lg flex items-center justify-center text-white text-lg">
               <h1 className=" ">Want to know more?</h1>
-              <h1 className="underline hover:text-black">
+              <Link to="/form"><h1 className="underline hover:text-black">
                 Download the Curriculum
-              </h1>
+              </h1></Link>
               <div className="h-6 w-6 self-start">{CrossSvg}</div>
             </div>
           </div>
@@ -617,13 +619,46 @@ function DataScienceCourse() {
           {/* end */}
         </div>
         {/* Answers start*/}
-        <div className="w-[80%] my-20 ">
+        <div className="w-[93%] my-20 ">
           <h1 className="text-center text-white text-5xl font-bold font-IBN">
             Seeking Answers? Find Them All in Our Detailed FAQ
           </h1>
-          <div className="m-10  h-96 flex p-10 shadow-lg shadow-white rounded-xl ">
-            <div className="w-1/2 bg-green-600">
-              <div className=""></div>
+          <div className=" m-10  h-auto  flex p-10 shadow-lg shadow-white rounded-xl ">
+            <div className="w-1/2 ">
+              <div className="m-5">
+                <div
+                  id="first"
+                  className="bg-[#030a21] py-5 text-white text-[16px] font-bold px-4 border-white border-[2px] rounded-lg font-extraboldbold flex items-center"
+                >
+                  <h1>
+                    What makes Debugshalas Data Science course in Indore unique,
+                    and how does Yukti by Debugshala enhance the learning
+                    experience?
+                  </h1>
+                  <div>
+                    <img
+                      id="third"
+                      className="w-6 h-4"
+                      src="assets/images/fast-forward.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div
+                  id="second"
+                  className="bg-[#030a21] py-5 text-white d px-4 border-white border-[2px] border-t-0 rounded-lg flex items-center "
+                >
+                  <h1>
+                    Answer: <br />
+                    Debugshalas Data Science course in Indore is distinguished
+                    by its practical training, personalized mentorship, and the
+                    support of the interactive developer community. Yukti by
+                    Debugshala amplifies the learning experience by providing
+                    AI-assisted tools that offer personalized insights, ensuring
+                    a more efficient learning journey in data analytics.
+                  </h1>
+                </div>
+              </div>
               <div className=""></div>
               <div className=""></div>
               <div className=""></div>
@@ -633,13 +668,13 @@ function DataScienceCourse() {
         </div>
         {/* Answers end*/}
       </div>
-    
+
       <div className=" fixed bottom-0 z-100000 h-24 isolate aspect-video w-full bg-white/20 shadow-lg ring-1 ring-black/5 flex justify-end">
         <div className="w-1/3 flex h-full">
           <h1 className="text-white text-lg flex justify-center items-center">
             Book your free Demo right now!
           </h1>
-          <button  className="bg-blue-600 text-white text-xl m-4 font-bold w-2/5 p-1 rounded-lg hover:text-black hover:bg-blue-700">
+          <button className="bg-blue-600 text-white text-xl m-4 font-bold w-2/5 p-1 rounded-lg hover:text-black hover:bg-blue-700">
             Enroll Now
           </button>
         </div>
