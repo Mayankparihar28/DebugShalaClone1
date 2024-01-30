@@ -15,7 +15,6 @@ import RefundPolicy from "./RefundPolicyDebug/RefundPolicyDebug";
 import DataScienceCourse from "./CourseDetails/DataScienceCourse";
 import MernStackCourse from "./CourseDetails/MernStackCourse";
 import JavaFullStackCourse from "./CourseDetails/JavaFullStackCourse";
-import Figma from "./figma.js";
 import Form from "./Form/Form.js";
 
 import ScrollToTop from './ScrollToTop.js';
@@ -38,7 +37,7 @@ function App() {
       <Route path="/data-science-course" element={<DataScienceCourse />}></Route>
       <Route path="/mern-stack-course" element={<MernStackCourse/>}></Route>
       <Route path="/java-full-stack-course" element={<JavaFullStackCourse/>}></Route>
-      <Route path="/figma" element={<Figma />}></Route>
+      
       <Route path="/form" element={<Form/>}></Route>
       </Routes>
         {/*<AnimatedCard/> */}

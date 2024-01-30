@@ -16,9 +16,11 @@ function DataScienceCourse() {
           <div className="flex justify-center items-center p-6">
             <div className="bg-blue-500 w-[75%] h-16 rounded-lg flex items-center justify-center text-white text-lg">
               <h1 className=" ">Want to know more?</h1>
-              <Link to="/form"><h1 className="underline hover:text-black">
-                Download the Curriculum
-              </h1></Link>
+              <Link to="/form">
+                <h1 className="underline hover:text-black">
+                  Download the Curriculum
+                </h1>
+              </Link>
               <div className="h-6 w-6 self-start">{CrossSvg}</div>
             </div>
           </div>
