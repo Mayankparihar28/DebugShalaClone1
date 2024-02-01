@@ -99,7 +99,7 @@ function Form() {
               </div>
               <div>
                 <button
-                  className="w-1/2 border-solid border-black border-[0.5px] p-2 rounded-md hover:bg-blue-700 "
+                  className="w-1/2 border-solid border-black border-[0.5px] p-2 rounded-md hover:bg-blue-700 active:bg-blue-950"
                   type="submit"
                 >
                   Submit

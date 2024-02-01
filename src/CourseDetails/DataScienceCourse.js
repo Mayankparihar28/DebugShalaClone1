@@ -8,20 +8,23 @@ function DataScienceCourse() {
     $("#first").click(function () {
       $("#second").toggle();
     });
+    $("#cross").click(function(){
+      $("#download").hide();
+    });
   });
   return (
     <>
       <div className="h-auto  flex flex-col justify-center items-center  bg-black">
         <div className="w-[65%] ">
           <div className="flex justify-center items-center p-6">
-            <div className="bg-blue-500 w-[75%] h-16 rounded-lg flex items-center justify-center text-white text-lg">
+            <div id="download" className="bg-blue-500 w-[75%] h-16 rounded-lg flex items-center justify-center text-white text-lg">
               <h1 className=" ">Want to know more?</h1>
               <Link to="/form">
                 <h1 className="underline hover:text-black">
                   Download the Curriculum
                 </h1>
               </Link>
-              <div className="h-6 w-6 self-start">{CrossSvg}</div>
+              <div id="cross" className="h-6 w-6 self-start">{CrossSvg}</div>
             </div>
           </div>
           <div className="  w-full flex text-white">

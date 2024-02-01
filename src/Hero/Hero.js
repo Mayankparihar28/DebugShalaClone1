@@ -18,14 +18,14 @@ function Hero() {
 
   return (
     <>
-      <div className="h-96 flex pt-40">
+      <div className="h-auto flex-col sm:flex-row md:flex-row lg:flex gap-10 w-full overflow-hidden pt-40 ">
         <div
-          className=" w-1/2 flex bg-no-repeat "
+          className=" w-1/2 flex bg-no-repeat h-full"
           style={{
             backgroundImage: "url('assets/images/asset62.png')",
           }}
         >
-          <div className="pl-28">
+          <div className="sm:pl-28">
             <h1
               style={textStyle}
               className="text-7xl  text-white  font-galano-grotesque-demo"
@@ -58,7 +58,7 @@ function Hero() {
         </div>
         {/*left div end*/}
         <div
-          className=" w-1/2 bg-contain relative -mt-28 ml-44"
+          className=" sm:w-1/2 bg-contain relative lg:-mt-28 sm:ml-44"
           style={{
             backgroundImage: "url('assets/images/asset1.svg')",
           }}
