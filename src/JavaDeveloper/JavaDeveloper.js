@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function JavaDeveloper() {
   return (
     <>
@@ -41,9 +42,9 @@ function JavaDeveloper() {
                   <br />
                   <br />
                 </p>
-                <button className="bg-blue-600 text-white text-xl font-bold w-4/5 p-8 rounded-lg hover:text-black hover:bg-blue-700">
+                <Link to="/form">  <button className="bg-blue-600 text-white text-xl font-bold w-4/5 p-8 rounded-lg hover:text-black hover:bg-blue-700">
                   Enroll Now
-                </button>
+                </button></Link>
               </div>
               {/*Second_inner_div*/}
               <div className="w-4/5 bg-black flex flex-col items-center">

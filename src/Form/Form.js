@@ -1,27 +1,38 @@
-import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import axios from "axios";
+import { _apiURLStudent } from "../apiUrl";
+import { useState } from "react";
 
 function Form() {
+  const [output, setOutput] = useState();
   const [name, setName] = useState();
   const [email, setEmail] = useState();
   const [mobile, setMobile] = useState();
   const [background, setBackground] = useState();
-  onsubmit = (event) => {
+
+  const handleSubmit = (event) => {
     event.preventDefault();
-    var userDetails = {
+    var stundentDetails = {
       name: name,
       email: email,
       mobile: mobile,
       background: background,
-    }
+    };
+    axios.post(_apiURLStudent , stundentDetails)
       .then((result) => {
         console.log(result);
-      })
-      .catch((error) => {
-        console.log(error);
+        if (result.data.data) {
+          
+          setOutput("User register successfully");
+          alert("Registration successfull");
+        } else {
+          setOutput("User registration failed");
+        }
+        setName("");
+        setEmail("");
+        setMobile("");
+        setBackground("");
       });
-
-    console.log(userDetails);
   };
 
   return (
@@ -38,19 +49,21 @@ function Form() {
           </div>
         </div>
         <div className="flex justify-center">
+        
           <div className="w-4/6 h-auto py-24 px-10 bg-white text-black font-IBN font-bold">
-            <form className="flex flex-col gap-10">
+            <form
+              className="form flex flex-col gap-10"
+              onSubmit={(e) => handleSubmit(e)}
+            >
               <div>
                 <label className="py-6 px-2">Full Name : </label>
                 <br />
                 <input
                   className="w-1/2 border-solid border-black border-[0.5px] p-2 rounded-md"
                   type="text"
-                  value={name}
-                  onChange={(event) => {
-                    setName(event.target.event);
-                  }}
                   placeholder="Full Name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                 />
               </div>
               <div>
@@ -59,11 +72,9 @@ function Form() {
                 <input
                   className="w-1/2 border-solid border-black border-[0.5px] p-2 rounded-md"
                   type="email"
-                  value={email}
-                  onChange={(event) => {
-                    setEmail(event.target.event);
-                  }}
                   placeholder="info@debugshala.com"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
               <div>
@@ -71,12 +82,10 @@ function Form() {
                 <br />
                 <input
                   className="w-1/2 border-solid border-black border-[0.5px] p-2 rounded-md"
-                  type="tel"
-                  value={mobile}
-                  onChange={(event) => {
-                    setMobile(event.target.event);
-                  }}
+                  type="text"
                   placeholder="7693070042"
+                  value={mobile}
+                  onChange={(e) => setMobile(e.target.value)}
                 />
               </div>
               <div>
@@ -84,10 +93,9 @@ function Form() {
                 <br />
                 <select
                   className="w-1/2 border-solid border-black border-[0.5px] p-2 rounded-md"
+                  
                   value={background}
-                  onChange={(event) => {
-                    setBackground(event.target.event);
-                  }}
+                  onChange={(e) => setBackground(e.target.value)}
                 >
                   <option className="w-1/2 border-solid border-black border-[0.5px] p-2 rounded-md">
                     IT
@@ -99,13 +107,14 @@ function Form() {
               </div>
               <div>
                 <button
-                  className="w-1/2 border-solid border-black border-[0.5px] p-2 rounded-md hover:bg-blue-700 active:bg-blue-950"
                   type="submit"
+                  className="w-1/2 border-solid border-black border-[0.5px] p-2 rounded-md hover:bg-blue-700 "
                 >
                   Submit
                 </button>
               </div>
             </form>
+            <font style={{ color: "blue" }}>{output}</font>
           </div>
         </div>
       </div>

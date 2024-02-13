@@ -1,11 +1,12 @@
 import { logoSvg, CrossSvg, svg1, svg2 } from "./logoSvg";
+import { Link } from "react-router-dom";
 
-function MernStackCourse() {
+function JavaFullStackCourse() { 
   return (
     <>
       <div className="h-auto  flex flex-col justify-center items-center  bg-black">
         <div className="w-[65%] ">
-          <div className=" flex justify-center items-center p-6">
+          <div className="flex justify-center items-center p-6">
             <div className="bg-blue-500 w-[75%] h-16 rounded-lg flex items-center justify-center text-white text-lg">
               <h1 className=" ">Want to know more?</h1>
               <h1 className="underline hover:text-black">
@@ -18,24 +19,21 @@ function MernStackCourse() {
             <div className="w-1/2  p-10 flex flex-col gap-14 ">
               <div>{logoSvg}</div>
               <p className=" text-5xl font-IBN font-bold">
-                
-              Become a Professional MERN Stack Developer in just 6 months.
-                
+                Become an Expert Data Scientist in just 6 months.
               </p>
               <p className=" text-xl font-IBN font-bold">
                 Embrace the power of data by learning practical skills with real
                 world insights. <br />
-              
-                Gain practical experience, master essential skills, and craft your portfolio from the scratch. 
+                Enroll now and launch your data science career.
               </p>
-              <button className="bg-blue-600 text-white text-xl font-bold w-4/5 p-6 rounded-lg hover:text-black hover:bg-blue-700">
+              <Link to="/form"><button className="bg-blue-600 text-white text-xl font-bold w-4/5 p-6 rounded-lg hover:text-black hover:bg-blue-700">
                 Enroll Now
-              </button>
+              </button></Link>
             </div>
             <div className="w-1/2   ">
               <div className=" pt-16 flex flex-col gap-16">
                 <div className="bg-gradient-to-r from-black to-[#4169e1]  p-10 w-full h-56 rounded-xl">
-                  <img src="assets/images/asset 51.svg" alt="" />
+                  <img src="assets/images/asset 50.svg" alt="" />
                 </div>
                 <div className="bg-gradient-to-r from-[#4169e1] to-[#040e2c] h-64 w-full border-white border-[1px] rounded-xl ">
                   <div className="h-[20%] border-white border-b-[1px] flex justify-center">
@@ -51,22 +49,22 @@ function MernStackCourse() {
                   <div className="h-[80%]  ">
                     <div className="grid grid-cols-4 grid-rows-2 gap-4 px-6">
                       <div className="w-16 h-16">
+                        <img src="assets/images/asset 25.webp" alt="" />
+                      </div>
+                      <div className="w-16 h-16">
+                        <img src="assets/images/asset 26.webp" alt="" />
+                      </div>
+                      <div className="w-16 h-16">
+                        <img src="assets/images/asset 27.webp" alt="" />
+                      </div>
+                      <div className="w-16 h-16">
+                        <img src="assets/images/asset 28.webp" alt="" />
+                      </div>
+                      <div className="w-16 h-16">
                         <img src="assets/images/asset 29.webp" alt="" />
                       </div>
                       <div className="w-16 h-16">
                         <img src="assets/images/asset 30.webp" alt="" />
-                      </div>
-                      <div className="w-16 h-16">
-                        <img src="assets/images/asset 31.webp" alt="" />
-                      </div>
-                      <div className="w-16 h-16">
-                        <img src="assets/images/asset 32.webp" alt="" />
-                      </div>
-                      <div className="w-16 h-16">
-                        <img src="assets/images/asset 33.webp" alt="" />
-                      </div>
-                      <div className="w-16 h-16">
-                        <img src="assets/images/asset 34.webp" alt="" />
                       </div>
                       <div className="w-16 h-16">
                         <img src="assets/images/asset 31.webp" alt="" />
@@ -83,11 +81,12 @@ function MernStackCourse() {
           <div className="bg-[#1a2a5b]  w-full my-24 border-[1px] rounded-xl border-white flex justify-center font-IBN text-white  ">
             <div className="w-11/12 ">
               <div className="p-12 flex flex-col gap-10">
-                <h1 className="text-4xl font-bold">Why Choose MERN Stack Development?</h1>
+                <h1 className="text-4xl font-bold">Why Choose Data Science?</h1>
                 <p className="text-xl ">
-                  
-                Even though the MERN Stack is acknowledged as a powerful tool for web development, a shortage of skilled professionals and accessible training opportunities hampers its widespread adoption.
-                
+                  Although data and analytics are widely acknowledged as
+                  essential for business success, a scarcity of qualified
+                  professionals and training opportunities impedes their
+                  effective adoption.
                 </p>
               </div>
               <div className="h-56 rounded-xl border-[1px] border-white mb-10  ">
@@ -130,10 +129,8 @@ function MernStackCourse() {
           </div>
           <div>
             <div className="w-full font-IBN text-white text-4xl text-center font-bold">
-              <h1>
-              Who should choose MERN Stack Development?
-            </h1>{" "}
-            </div> 
+              <h1>Who should choose Data Science?</h1>{" "}
+            </div>
             <div className=" my-20  grid grid-cols-2 grid-rows-6 gap-5 text-white">
               <div className="border-[1px] border-white border-lg rounded-lg flex gap-5 items-center text-2xl px-4 py-3 bg-gradient-to-r from-[#000] to-[#5c5a5a]">
                 <div className=" w-12 h-12 bg-green-500 border-8 border-green-800 rounded-full ">
@@ -636,13 +633,13 @@ function MernStackCourse() {
           <h1 className="text-white text-lg flex justify-center items-center">
             Book your free Demo right now!
           </h1>
-          <button  className="bg-blue-600 text-white text-xl m-4 font-bold w-2/5 p-1 rounded-lg hover:text-black hover:bg-blue-700">
+          <Link to="/form">  <button  className="bg-blue-600 text-white text-xl m-4 font-bold w-2/5 p-1 rounded-lg hover:text-black hover:bg-blue-700">
             Enroll Now
-          </button>
+          </button></Link>
         </div>
       </div>
     </>
   );
 }
 
-export default MernStackCourse;
+export default JavaFullStackCourse;

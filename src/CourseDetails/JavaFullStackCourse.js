@@ -1,4 +1,5 @@
 import { logoSvg, CrossSvg, svg1, svg2 } from "./logoSvg";
+import { Link } from "react-router-dom";
 
 function JavaFullStackCourse() { 
   return (
@@ -25,9 +26,9 @@ function JavaFullStackCourse() {
                 world insights. <br />
                 Enroll now and launch your data science career.
               </p>
-              <button className="bg-blue-600 text-white text-xl font-bold w-4/5 p-6 rounded-lg hover:text-black hover:bg-blue-700">
+              <Link to="/form"><button className="bg-blue-600 text-white text-xl font-bold w-4/5 p-6 rounded-lg hover:text-black hover:bg-blue-700">
                 Enroll Now
-              </button>
+              </button></Link>
             </div>
             <div className="w-1/2   ">
               <div className=" pt-16 flex flex-col gap-16">
@@ -632,9 +633,9 @@ function JavaFullStackCourse() {
           <h1 className="text-white text-lg flex justify-center items-center">
             Book your free Demo right now!
           </h1>
-          <button  className="bg-blue-600 text-white text-xl m-4 font-bold w-2/5 p-1 rounded-lg hover:text-black hover:bg-blue-700">
+          <Link to="/form">  <button  className="bg-blue-600 text-white text-xl m-4 font-bold w-2/5 p-1 rounded-lg hover:text-black hover:bg-blue-700">
             Enroll Now
-          </button>
+          </button></Link>
         </div>
       </div>
     </>

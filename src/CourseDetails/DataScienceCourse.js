@@ -8,23 +8,18 @@ function DataScienceCourse() {
     $("#first").click(function () {
       $("#second").toggle();
     });
-    $("#cross").click(function(){
-      $("#download").hide();
-    });
   });
   return (
     <>
       <div className="h-auto  flex flex-col justify-center items-center  bg-black">
         <div className="w-[65%] ">
           <div className="flex justify-center items-center p-6">
-            <div id="download" className="bg-blue-500 w-[75%] h-16 rounded-lg flex items-center justify-center text-white text-lg">
+            <div className="bg-blue-500 w-[75%] h-16 rounded-lg flex items-center justify-center text-white text-lg">
               <h1 className=" ">Want to know more?</h1>
-              <Link to="/form">
-                <h1 className="underline hover:text-black">
-                  Download the Curriculum
-                </h1>
-              </Link>
-              <div id="cross" className="h-6 w-6 self-start">{CrossSvg}</div>
+              <Link to="/form"><h1 className="underline hover:text-black">
+                Download the Curriculum
+              </h1></Link>
+              <div className="h-6 w-6 self-start">{CrossSvg}</div>
             </div>
           </div>
           <div className="  w-full flex text-white">
@@ -38,9 +33,9 @@ function DataScienceCourse() {
                 world insights. <br />
                 Enroll now and launch your data science career.
               </p>
-              <button className="bg-blue-600 text-white text-xl font-bold w-4/5 p-6 rounded-lg hover:text-black hover:bg-blue-700">
+              <Link to="/form"> <button className="bg-blue-600 text-white text-xl font-bold w-4/5 p-6 rounded-lg hover:text-black hover:bg-blue-700">
                 Enroll Now
-              </button>
+              </button></Link>
             </div>
             <div className="w-1/2   ">
               <div className=" pt-16 flex flex-col gap-16">
@@ -679,9 +674,9 @@ function DataScienceCourse() {
           <h1 className="text-white text-lg flex justify-center items-center">
             Book your free Demo right now!
           </h1>
-          <button className="bg-blue-600 text-white text-xl m-4 font-bold w-2/5 p-1 rounded-lg hover:text-black hover:bg-blue-700">
+          <Link to="/form"><button className="bg-blue-600 text-white text-xl m-4 font-bold w-2/5 p-1 rounded-lg hover:text-black hover:bg-blue-700">
             Enroll Now
-          </button>
+          </button></Link>
         </div>
       </div>
     </>

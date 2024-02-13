@@ -38,7 +38,7 @@ function Footer() {
                       href="https://g.page/r/CcsLemNK3jpGEBM/review"
                       title="Google Reviews - Debugshala"
                       class="snipcss0-6-13-14"
-                      target="_blank"
+                      target="_blank" rel="noreferrer"
                     >
                       Leave a Review for Debugshala
                     </a>
@@ -97,7 +97,7 @@ function Footer() {
               </h1>
               <hr className="border-[#c1bebe] border-spacing-2" />
               <ul className="flex text-[#c4c7cf] p-1.5 pl-0 font-normal gap-x-4">
-                <li><Link to="/aboutus">About Debugshala |</Link></li>
+                <li><Link to="/about-us">About Debugshala |</Link></li>
                 <li>
                   <a> An Instructor | </a>
                 </li>

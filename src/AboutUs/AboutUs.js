@@ -1,6 +1,13 @@
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 function AboutUs() {
+ 
+  const test=(()=>(
+    axios.get("http://localhost:4000/get").then((result)=>(
+      console.log(result)
+      ))
+  ))
   const textStyle = {
     WebkitTextStrokeWidth: "1px",
     WebkitTextStrokeColor: "black",
