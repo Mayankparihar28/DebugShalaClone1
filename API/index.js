@@ -11,7 +11,7 @@ dotenv.config();
 const PORT = process.env.PORT || 4001;
 app.use(cors(
   {
-    origin:["https://deploy-mern-1whq.vercel.app"],
+    origin:[""],
     methods:["POST","GET"],
     credentials:true
   }
