@@ -1,0 +1,170 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: pink ;
+}
+
+.main{
+  height: 250px;
+  width: 100%;
+  background-color: red;
+  border: radius 2px;
+  display: flex;
+  flex-direction: row;
+}
+
+.first{
+  background-color: yellow;
+  height: inherit;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.second{
+  background-color: orange;
+  height: inherit;
+  width: 50%;
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.dropdown{
+  height: 250px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aqua;
+  
+
+}
+
+.opt{
+  color: green;
+  padding: 100px;
+}
+
+.opt_main{
+  display: none;
+  position: inherit;
+  padding: 10px;
+}
+
+.cover:hover{
+  background-color: rgba(red, green, rgb(20, 20, 176), 0.3);
+}
+
+.container{
+  height: 500px;
+  width: auto;
+  background-color: yellowgreen;
+  display: flex;
+  flex-direction: left;
+}
+
+.left_div{
+  height: inherit;
+  width: 50%;
+  background-color: yellow;
+  display: flex;
+  flex-direction: row;
+}
+
+.my_image{
+  position: relative;
+  top: 100px;
+
+}
+.pera_container{
+  line-height: 100px;
+}
+
+.pera1{
+  color: pink;
+  font-size: large;
+  font-weight: 700;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.pera2{
+  color: salmon;
+  font-size: xx-large;
+  font-weight: 600;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+
+.right_div{
+  height: inherit;
+  width: 50%;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  
+}
+
+.grid_container{
+  display: grid;
+  grid-template-columns: repeat(7 ,1fr);
+  grid-template-rows: repeat(7,1fr);
+  gap: 10px;
+  position: relative;
+  margin: -105px 0 0 20px;
+}
+
+.grid_items{
+  background-color: brown;
+  height: 50px;
+  width: 50px;
+  border: solid 2px black;
+
+}
+
+.paragraph{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.single_line_para{
+  font-size: xx-large;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  padding: 50px;
+}
+
+.yuktiai{
+  height:300px;
+  background-color: blue;
+  width: auto;
+}
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.icon-box {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.icon-box i {
+  font-size: 36px;
+  color: #3498db;
+}
+
+.icon-title {
+  margin-top: 10px;
+  font-size: 16px;
+}
