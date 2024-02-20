@@ -11,12 +11,13 @@ function Cards() {
   return (
     <>
       <div
-        className=" flex items-center justify-around bg-[#030a21] h-72 overflow-hidden"
+        className=" sm:flex items-center justify-around bg-[#030a21] h-auto overflow-hidden"
         style={{
           backgroundImage: "url('assets/images/asset 64.svg')",
         }}
       >
-        <div className="w-80% flex  justify-around gap-16">
+        <div></div>
+        <div className="flex flex-col p-6 sm:flex-row sm:w-80%  justify-around gap-16">
           {/*first */}
           <div className="bg-white grid grid-rows-3 grid-flow-col rounded-xl ">
             <div className="py-0 px-4 row-span-3 flex items-center">
@@ -75,13 +76,13 @@ function Cards() {
           </div>
         </div>
       </div>
-      <div className="bg-gradient-to-r from-[#030a21] to-[#165e67] h-screen flex  items-center justify-center overflow-hidden">
-        <div className="flex items-center justify-around w-4/5">
+      <div className="flex flex-col  sm:flex-row justify-center items-center  sm:bg-gradient-to-r from-[#030a21] to-[#165e67] h-auto ">
+        <div className="py-10 flex flex-col gap-6 sm:gap-10 sm:flex-row items-center justify-around w-4/5">
           {/*first div  */}
           <div
             className="bg-gradient-to-r from-[#030a21] to-[#165e67] rounded-full"
             style={imageStyle}
-            >
+          >
             <div className="p-10">
               <img
                 className="w-80 "
@@ -103,33 +104,35 @@ function Cards() {
           </div>
           {/*Second div  */}
           <div
-          className="bg-gradient-to-r from-[#030a21] to-[#165e67] rounded-full"
-          style={imageStyle}
+            className="bg-gradient-to-r from-[#030a21] to-[#165e67] rounded-full"
+            style={imageStyle}
           >
-          <div className="p-10">
-            <img
-              className="w-80 "
-              src="assets/images/asset 51.svg"
-              alt="java developer"
-            />
+            <div className="p-10">
+              <img
+                className="w-80 "
+                src="assets/images/asset 51.svg"
+                alt="java developer"
+              />
+            </div>
+            <div className="p-2 ">
+              <h1 className=" pl-8 text-white text-3xl">
+                MERN Stack Development
+              </h1>
+            </div>
+            <div className=" p-2 pb-4 flex">
+              <h2 className="pl-8 text-white text-lg">See Courses</h2>
+              <img
+                className="pt-1"
+                src="assets/images/arrowRight.svg"
+                alt="arrow"
+              />
+            </div>
           </div>
-          <div className="p-2 ">
-            <h1 className=" pl-8 text-white text-3xl">MERN Stack Development</h1>
-          </div>
-          <div className=" p-2 pb-4 flex">
-            <h2 className="pl-8 text-white text-lg">See Courses</h2>
-            <img
-              className="pt-1"
-              src="assets/images/arrowRight.svg"
-              alt="arrow"
-            />
-          </div>
-        </div>
           {/*third div  */}
           <div
             className="bg-gradient-to-r from-[#030a21] to-[#165e67] rounded-full"
             style={imageStyle}
-            >
+          >
             <div className="p-10">
               <img
                 className="w-80 "
@@ -138,7 +141,9 @@ function Cards() {
               />
             </div>
             <div className="p-2 ">
-              <h1 className=" pl-8 text-white text-3xl">Java Web Development</h1>
+              <h1 className=" pl-8 text-white text-3xl">
+                Java Web Development
+              </h1>
             </div>
             <div className=" p-2 pb-4 flex">
               <h2 className="pl-8 text-white text-lg">See Courses</h2>
