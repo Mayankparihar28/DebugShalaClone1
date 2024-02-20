@@ -1,7 +1,7 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 
-import BeforeNav from "./Navbar2/BeforeNav.js";
+import BeforeNav from "./Navbar2/BeforNav.js";
 import Home from "./Home/Home";
 import HireFromUs from "./HireFromUs/HireFromUs";
 import JobSeekers from "./JobSeekers/JobSeekers";
