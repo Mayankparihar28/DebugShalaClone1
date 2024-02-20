@@ -1,7 +1,7 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 
-import BeforeNav from "./Navbar 2/BeforeNav.js";
+import BeforeNav from "./Navbar2/BeforeNav.js";
 import Home from "./Home/Home";
 import HireFromUs from "./HireFromUs/HireFromUs";
 import JobSeekers from "./JobSeekers/JobSeekers";
@@ -18,7 +18,7 @@ import Form from "./Form/Form.js";
 import StudentsDetails from "./StudentsDetails/StudentDetails.js";
 import ScrollToTop from "./ScrollToTop.js";
 import ReactRedux from "./ReactRedux/ReactRedux.js";
-import Navbar2 from "./Navbar 2/Navbar2.js";
+import Navbar2 from "./Navbar2/Navbar2.js";
 import Toggle from "./toggle.js";
 function App() {
   return (

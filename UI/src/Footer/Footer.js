@@ -4,9 +4,9 @@ function Footer() {
   return (
     <>
       {/*wrapper */}
-      <div className="bg-[#030a21] flex justify-center overflow-hidden">
-        <div className=" w-[95%] my-10 h-auto">
-          <div className=" flex">
+      <div className="bg-[#030a21] flex flex-col sm:flex-row justify-center  overflow-hidden">
+        <div className=" w-[95%] m-10 h-auto">
+          <div className="   flex flex-col sm:flex-row justify-center  ">
             <div className="w-[73%]">
               {" "}
               <div>
@@ -14,7 +14,7 @@ function Footer() {
                   Contact Debugshala
                 </h1>
                 <hr className="border-[#c1bebe] border-spacing-2" />
-                <ul className="flex text-[#c4c7cf] p-1.5 pl-0 font-normal gap-x-4">
+                <ul className="  flex flex-col sm:flex-row   text-[#c4c7cf] p-1.5 pl-0 font-normal gap-x-4">
                   <li>
                     <span className="font-bold">Call : </span>+917693070042 |
                     +919111333207 |
@@ -27,7 +27,7 @@ function Footer() {
                     </a>
                   </li>
                 </ul>
-                <ul className="flex text-[#c4c7cf] font-normal ">
+                <ul className="  flex flex-col sm:flex-row   text-[#c4c7cf] font-normal ">
                   <li>
                     <span className="font-bold">Address : </span> C.S Naidu
                     Arcade, 204, Greater Kailash Road, Opposite Grotto, Old
@@ -38,7 +38,8 @@ function Footer() {
                       href="https://g.page/r/CcsLemNK3jpGEBM/review"
                       title="Google Reviews - Debugshala"
                       class="snipcss0-6-13-14"
-                      target="_blank" rel="noreferrer"
+                      target="_blank"
+                      rel="noreferrer"
                     >
                       Leave a Review for Debugshala
                     </a>
@@ -52,7 +53,7 @@ function Footer() {
                     Students Zone
                   </h1>
                   <hr className="border-[#c1bebe] border-spacing-2 gap-x-4" />
-                  <ul className="flex text-[#c4c7cf] p-1.5 pl-0 font-normal ">
+                  <ul className="  flex flex-col sm:flex-row   text-[#c4c7cf] p-1.5 pl-0 font-normal ">
                     <li>Yukti - AI Assistant |</li>
                     <li>
                       <a> Study Space - Ultimate AI Productivity Partner | </a>
@@ -64,13 +65,13 @@ function Footer() {
                 </div>
               </div>{" "}
             </div>
-            <div className="w-[27%] p-2">
+            <div className="w-[100%] sm:w-[27%] p-2">
               {" "}
               <h1 className="text-[#c4c7cf]  font-semibold text-xl ">
                 Shoot a DM at our Social Media Handles!
               </h1>
               <hr className="border-[#c1bebe] border-spacing-2" />
-              <div className="pt-2 flex gap-2 ">
+              <div className="pt-2   flex sm:flex-row   gap-2 ">
                 <div className="w-9 h-9">
                   <img src="assets/images/facebook.png" alt="" />
                 </div>
@@ -96,8 +97,10 @@ function Footer() {
                 Company
               </h1>
               <hr className="border-[#c1bebe] border-spacing-2" />
-              <ul className="flex text-[#c4c7cf] p-1.5 pl-0 font-normal gap-x-4">
-                <li><Link to="/about-us">About Debugshala |</Link></li>
+              <ul className="  flex flex-col sm:flex-row   text-[#c4c7cf] p-1.5 pl-0 font-normal gap-x-4">
+                <li>
+                  <Link to="/about-us">About Debugshala |</Link>
+                </li>
                 <li>
                   <a> An Instructor | </a>
                 </li>
@@ -105,14 +108,14 @@ function Footer() {
                   <a> Hire From Us |</a>
                 </li>
                 <li>Find a Job in Data Science |</li>
-                <li><Link to="/privacy-policy">Privacy Policy |</Link>
-                 
-                </li>
-                <li><Link to="/terms-conditions">Terms & Conditions |</Link>
-                 
+                <li>
+                  <Link to="/privacy-policy">Privacy Policy |</Link>
                 </li>
                 <li>
-                <Link to="/refund-policy">Refund Policy |</Link>
+                  <Link to="/terms-conditions">Terms & Conditions |</Link>
+                </li>
+                <li>
+                  <Link to="/refund-policy">Refund Policy |</Link>
                 </li>
               </ul>
             </div>
@@ -122,24 +125,36 @@ function Footer() {
                 Top Placement Courses in Indore
               </h1>
               <hr className="border-[#c1bebe] border-spacing-2" />
-              <ul className="flex text-[#c4c7cf] p-1.5 pl-0 font-normal gap-x-4 ">
-                <li><Link to="/data-science-course">Data Science Placement Course in Indore</Link> |</li>
+              <ul className="flex flex-col sm:flex-row flex-wrap text-[#c4c7cf] p-1.5 pl-0 font-normal gap-x-4 w-[95%] sm:w-auto">
                 <li>
-                <Link to="/java-full-stack-course">Java Web Development Placement Course in Indore</Link> | 
+                  <Link to="/data-science-course">
+                    Data Science Placement Course in Indore
+                  </Link>{" "}
+                  |
                 </li>
                 <li>
-                <Link to="/mern-stack-course"> MERN Stack Development Placement Course in Indore</Link> |
+                  <Link to="/java-full-stack-course" className="flex flex-wrap">
+                    Java Web Development Placement Course in Indore
+                  </Link>{" "}
+                  |
                 </li>
-                <li> Find a Job in Data Science |</li>
+                <li>
+                  <Link to="/mern-stack-course">
+                    MERN Stack Development Placement Course in Indore
+                  </Link>{" "}
+                  |
+                </li>
+                <li>Find a Job in Data Science |</li>
               </ul>
             </div>
+
             {/*Crash Courses by Debugshala in Indore */}
             <div>
               <h1 className="text-[#c4c7cf] p-1.5 pl-0 font-semibold text-xl font-IBN">
                 Crash Courses by Debugshala in Indore
               </h1>
               <hr className="border-[#c1bebe] border-spacing-2" />
-              <ul className="flex text-[#c4c7cf] p-1.5 pl-0 font-normal flex-wrap gap-x-4">
+              <ul className="flex flex-col sm:flex-row   text-[#c4c7cf] p-1.5 pl-0 font-normal flex-wrap gap-x-4">
                 <li>Cybersecurity |</li>
                 <li>
                   <a> Cloud computing | </a>
@@ -171,7 +186,7 @@ function Footer() {
             </div>
             <hr className="border-[#c1bebe] border-spacing-2 w-2/5 " />
           </div>
-          <div>
+          <div className="w-[95%] sm:w-auto">
             <p className=" text-[#c4c7cf] p-1.5 pl-0 font-normal gap-x-4">
               We have convenient location in Indore at Old Palasia. If you
               reside or seek training in any of these areas, reach out to our
@@ -198,7 +213,12 @@ function Footer() {
             </p>
 
             <p className=" text-[#c4c7cf] p-1.5 pl-0 font-normal gap-x-4">
-              © 2023 <span className="underline font-bold text-[#ffcb00]"> Debugshala.</span> All Rights Reserved.
+              © 2023{" "}
+              <span className="underline font-bold text-[#ffcb00]">
+                {" "}
+                Debugshala.
+              </span>{" "}
+              All Rights Reserved.
             </p>
           </div>
         </div>

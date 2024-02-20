@@ -1,32 +1,18 @@
-import axios from "axios";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { _apiURLStudentFetch } from "../apiUrl";
+import axios from "axios";
 
-function StudentsDetails() {
+const StudentsDetails = () => {
+  const [query, setQuery] = useState("");
   const [studentsDetails, setStudentsDetails] = useState([]);
-  const [query, setQurey] = useState("");
-  const [result, setResult] = useState([]);
+  const [filteredResults, setFilteredResults] = useState([]);
 
-  result.forEach((element, index) => {
-    const data = element.name
-  
-    if(query === data){
-      console.log("match");
-    }
-  });
-
-
-  const Search = async () => {
-    try {
-      const response = await axios.get(_apiURLStudentFetch);
-      const filteredResults = response.data.data.filter(
-        () => (student) =>
-          student.name.toLowerCase().includes(query.toLowerCase())
-      );
-      setResult(filteredResults);
-    } catch (error) {
-      console.error(error);
-    }
+  const Search = () => {
+    setFilteredResults(
+      studentsDetails.filter((student) =>
+        student.name.toLowerCase().includes(query.toLowerCase())
+      )
+    );
   };
 
   useEffect(() => {
@@ -50,7 +36,7 @@ function StudentsDetails() {
             className="text-[greenyellow] w-[60%] h-12 rounded-xl"
             type="text"
             value={query}
-            onChange={(event) => setQurey(event.target.value)}
+            onChange={(event) => setQuery(event.target.value)}
           />
           <button
             onClick={Search}
@@ -62,7 +48,7 @@ function StudentsDetails() {
       </div>
       <div className="w-full h-auto   px-4 py-2 flex flex-col items-center ">
         <table>
-          {result.map((result) => (
+          {filteredResults.map((result) => (
             <tr key={result._id}>
               <th>{result.name}</th>
               <th>{result.email}</th>
@@ -109,6 +95,6 @@ function StudentsDetails() {
       </div>
     </>
   );
-}
+};
 
 export default StudentsDetails;

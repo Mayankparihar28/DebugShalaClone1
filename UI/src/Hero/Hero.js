@@ -18,7 +18,7 @@ function Hero() {
 
   return (
     <>
-      <div className="h-auto flex-col sm:flex-row md:flex-row lg:flex gap-10 w-full overflow-hidden pt-40 ">
+      <div className="w-screen p-10   sm:h-auto flex-col sm:flex-row md:flex-row lg:flex gap-10  overflow-hidden pt-40 ">
         <div
           className=" w-1/2 flex bg-no-repeat h-full"
           style={{
@@ -28,17 +28,17 @@ function Hero() {
           <div className="sm:pl-28">
             <h1
               style={textStyle}
-              className="text-7xl  text-white  font-galano-grotesque-demo"
+              className=" text-4xl sm:text-7xl  text-white  font-galano-grotesque-demo"
             >
               Become a
             </h1>
             <h1
               style={textStyle}
-              className="text-6xl text-white font-galano-grotesque-demo m-0"
+              className=" text-4xl sm:text-6xl text-white font-galano-grotesque-demo m-0"
             >
               Data_Science
             </h1>
-            <p className=" text-3.2rem text-white font-galano-grotesque-demo mt-3">
+            <p className="text-[18px] sm:text-3.2rem text-white font-galano-grotesque-demo mt-3">
               Unlock your potential with DebugShala, Indore premier training and
               placement institute. Elevate your career with our expert-led
               courses and guaranteed placement assistance.
@@ -46,9 +46,10 @@ function Hero() {
             <div className="mt-6">
               <Link
                 to="/form"
-                class="animate-pulse relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group"target="_blank"
+                class="animate-pulse relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group"
+                target="_blank"
               >
-                <span class="w-48 h-48 rounded rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0" ></span>
+                <span class="w-48 h-48 rounded rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
                 <span class="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
                   Enroll Now
                 </span>
@@ -63,8 +64,15 @@ function Hero() {
             backgroundImage: "url('assets/images/asset1.svg')",
           }}
         >
+          <div className="block mt-20 sm:hidden">
+            <img
+              src="/assets/images/debugshalabaner_img(1).webp"
+              alt="debugshala baner"
+            />
+          </div>
           {/*Grid start */}
-          <div className="grid grid-cols-7 grid-rows-7 gap-0 h-auto w-8/12">
+          
+          <div className="hidden sm:grid grid-cols-7 grid-rows-7 gap-0 h-auto w-8/12 ">
             <div className="h-16 w-16 "></div>
             <div className="h-16 w-16"></div>
             <div className="h-16 w-16">
@@ -266,15 +274,15 @@ function Hero() {
         </div>
       </div>
       {/*slide images */}
-      <div className="h-44  "></div>
-      <div className="h-96">
-        <p className="flex justify-center text-white text-lg">
+      <div className="sm:h-44  "></div>
+      <div className="sm:h-96">
+        <p className=" sm:flex justify-center text-white text-lg">
           Envision Your Future in Top Companies with DebugShala.
         </p>
 
         <div className="mb-96">
           <div class="flex overflow-hidden w-full">
-            <div class="animate-scrolling-images flex w-full gap-10">
+            <div class="animate-scrolling-images flex w-full gap-1 sm:gap-10">
               <div className="h-24 w-24">
                 <img
                   src="assets/images/asset 25.webp"
@@ -347,7 +355,7 @@ function Hero() {
               </div>
             </div>
           </div>
-          <div class="animate-scrolling-images-reverse flex w-full gap-10">
+          <div class="animate-scrolling-images-reverse flex w-full sm:gap-10">
             <div className="h-24 w-24">
               <img
                 src="assets/images/asset 25.webp"
@@ -418,10 +426,9 @@ function Hero() {
                 className="w-full"
               />
             </div>
-            
           </div>
         </div>
-      </div>honda shine
+      </div>
     </>
   );
 }
