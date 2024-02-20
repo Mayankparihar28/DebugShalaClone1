@@ -1,3 +1,3 @@
-export const _apiURLStudent = "http://localhost:4000/save";
+export const _apiURLStudent = "http://debug-shala-clone1-api.vercel.app/save";
 
-export const _apiURLStudentFetch = "http://localhost:4000/fetch";
+export const _apiURLStudentFetch = "http://debug-shala-clone1-api.vercel.app/fetch";
