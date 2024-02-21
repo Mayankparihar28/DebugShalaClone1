@@ -1,3 +1,3 @@
-export const _apiURLStudent = "http://debug-shala-clone1-api.vercel.app/save";
+export const _apiURLStudent = "https://debug-shala-clone1-api.vercel.app/save";
 
-export const _apiURLStudentFetch = "http://debug-shala-clone1-api.vercel.app/fetch";
+export const _apiURLStudentFetch = "https://debug-shala-clone1-api.vercel.app/fetch";
